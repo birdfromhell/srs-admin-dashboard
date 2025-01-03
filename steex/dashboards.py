@@ -6,8 +6,7 @@ dashboards = Blueprint('dashboards',__name__,template_folder='templates',
     static_folder='static',)
     
 
-@dashboards.route('/')
-@login_required
+@dashboards.route('/')
 def index():
     return render_template('dashboards/index.html')
 
